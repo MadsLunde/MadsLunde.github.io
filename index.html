@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Flappy Snoop</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/FlappySnoopWeb0_1_2.json", {onProgress: UnityProgress});
-      gameInstance.SetFullscreen(1)
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 100%; height: 100%"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-      </div>
-    </div>
-  </body>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        
+            <div class="site-name">
+                <h1>Thought Bank</h1>
+            </div>
+            <div class="header">
+                <div class="header-right">
+                    <a class="active" href="./index.html">Home</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="./about.html">About</a>
+                </div>
+            </div>
+            <div class="container">
+            <div class="withdraw container-item">
+                <h2>Withdraw a thought!</h2>
+                <div id="withdrawGap"></div>
+                <button>Withdraw</button>
+                <p id="withdrawText">This is a small change, but a big move for us. 140 was an arbitrary choice based on the 160 character SMS limit. Proud of how thoughtful the team has been in solving a real problem people have when trying to tweet. And at the same time maintaining our brevity, speed, and essence!</p>
+            </div>
+
+            <div class="deposit container-item">
+                <h2>Deposit a thought!</h2>
+                <textarea class="depositText"></textarea>
+                <br>
+                <button>Deposit</button>
+            </div>
+        </div>
+    </body>
 </html>

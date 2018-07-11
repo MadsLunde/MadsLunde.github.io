@@ -1,0 +1,125 @@
+.container {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 25px;
+    padding: 25px;
+}
+
+.site-name {
+    font-size: 42px;
+    text-align: center;
+}
+
+.header {
+    overflow: hidden;
+    background-color: slategray;
+}
+
+.header a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: ligher;
+    padding: 20px;
+    background-color: slategray;
+}
+
+
+.header a:hover {
+    background-color: #647381;
+    color: white;
+}
+
+.header a.active {
+    background-color: white;
+    color: black;
+}
+
+.header-right {
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: auto auto auto;
+    grid-area: span;
+    grid-template-columns: auto;
+    grid-area: span;
+}
+
+.container-item {
+    padding: 25px;
+    background-color: #e2e5e8;
+    text-align: center;
+    border-bottom: 3px solid #bdbdbd;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+a {
+    font-size: 2em;
+}
+
+#withdrawGap {
+    padding: 50px;
+}
+
+.depositText {
+    background: #e2e5e8;
+    font-size: 32px;
+    text-align: center;
+    width: 75%;
+    height: 100px;
+    border: 0px;
+    padding: 0px;
+    resize: none;
+}
+
+.depositText:hover {
+    background-color:#d4d8dd;
+}
+
+.depositText:active {
+    background-color:#d4d8dd;
+}
+
+* button {
+    background-color: slategray;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 2px #596673;
+}
+
+* button:hover {background-color: #647381}
+
+* button:active {
+  background-color: #647381;
+  transform: translateY(4px);
+  
+}
+
+@media (min-width: 1080px) {
+    .header-right {
+    grid-template-columns: auto auto auto;
+    grid-area: span;
+    }
+    .container {
+    grid-template-columns: 2fr 2fr;
+    }
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px #7e8c9b;
+}
+
