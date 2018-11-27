@@ -1,0 +1,17 @@
+.header, .container {
+    background-color: #e7f1e3;
+}
+
+body {
+    background-color: #e7f1e3;
+}
+
+.container {
+    grid-row-gap: 5%;
+}
+
+.container-item {
+    padding: 5%;
+    max-width: 90%;
+    line-height: 20px;
+}

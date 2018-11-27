@@ -1,125 +1,115 @@
-.container {
-    display: grid;
-    grid-template-columns: 4fr;
-    grid-template-rows: 2fr 2fr;
-    grid-gap: 25px;
-    padding: 25px;
+body, html {
+    height: 100%;
+    -ms-overflow-style: none;
 }
 
-.site-name {
-    font-size: 42px;
-    text-align: center;
+body {
+    width: 100%;
+    margin: 0;
 }
 
 .header {
+    font-size: 8vw;
+    cursor: pointer;
+    height: 20vw;
     overflow: hidden;
-    background-color: slategray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #ffffff;
 }
 
-.header a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: ligher;
-    padding: 20px;
-    background-color: slategray;
-}
-
-
-.header a:hover {
-    background-color: #647381;
-    color: white;
-}
-
-.header a.active {
-    background-color: white;
-    color: black;
-}
-
-.header-right {
+.footer {
     display: grid;
-    grid-gap: 0px 0px;
-    grid-template-columns: auto auto auto;
-    grid-area: span;
-    grid-template-columns: auto;
-    grid-area: span;
+    font-size: 5vw;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #ffffff;
+    grid-template-columns: 50% 50%;
+    float: left;
+}
+
+.mainPage {
+    grid-column: 1 span 1;
+    background-color: rgb(212, 221, 224);
+}
+
+.klimakampen {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 500;
+    grid-column: 2 span 1;
+    background-color: #ddebd7;
+    z-index: 3;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.nav {
+    color: #3b4955;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 3;
+    padding: 2vw;
+}
+
+.burger {
+    font-size: 12vw;
+    padding: 5vw;
+    height: 100%;
+    width: 100%;
+    margin-top: 100%;
+    margin-bottom: 100%;
+}
+
+.headerNef {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    z-index: 2;
+    transform: translate(50%,0%);
+}
+
+.divForNefImage {
+    margin-left: auto;
+    margin-right:auto;
+    width: 8em;
+    display: block;
+    font-size: 4vw;
+}
+
+.container {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 2.5%;
+    z-index: 1;
 }
 
 .container-item {
-    padding: 25px;
-    background-color: #e2e5e8;
-    text-align: center;
-    border-bottom: 3px solid #bdbdbd;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-p {
-    font-size: 2em;
+    border-radius: 7.5px;
+    width: 100%;
+    position: relative;
+    background-color: #f2f4f5;
+    grid-column-start: auto;
+    grid-column-end: span 2;
+    grid-row-start: auto;
+    grid-row-end: span 1;
+    z-index: 1;
+    box-shadow: 5px 5px 5px grey;
 }
 
 a {
-    font-size: 2em;
+    color: black;
 }
-
-#withdrawGap {
-    padding: 50px;
-}
-
-.depositText {
-    background: #e2e5e8;
-    font-size: 32px;
-    text-align: center;
-    width: 75%;
-    height: 100px;
-    border: 0px;
-    padding: 0px;
-    resize: none;
-}
-
-.depositText:hover {
-    background-color:#d4d8dd;
-}
-
-.depositText:active {
-    background-color:#d4d8dd;
-}
-
-* button {
-    background-color: slategray;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: 0px 2px #596673;
-}
-
-* button:hover {background-color: #647381}
-
-* button:active {
-  background-color: #647381;
-  transform: translateY(4px);
-  
-}
-
-@media (min-width: 1080px) {
-    .header-right {
-    grid-template-columns: auto auto auto;
-    grid-area: span;
-    }
-    .container {
-    grid-template-columns: 2fr 2fr;
-    }
-}
-
-* {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 1px 1px #7e8c9b;
-}
-
