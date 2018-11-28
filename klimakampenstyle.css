@@ -15,3 +15,7 @@ body {
     max-width: 90%;
     line-height: 20px;
 }
+
+.header2 {
+    font-weight: bold;
+}

@@ -25,7 +25,7 @@ body {
 }
 
 .overlay-content {
-    position: relative;
+  position: relative;
     padding-left: 5%;
     top: 15%;
     width: 100%;
@@ -34,9 +34,10 @@ body {
 }
 
 .overlay a {
-    padding: 10px;
+  padding: 10px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 12vw;
+    line-height: 12vw;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -68,10 +69,11 @@ body {
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">Forbrug</a>
-    <a href="#">Sammenligning</a>
-    <a href="#">Indstillninger</a>
-    <a href="#">Kontakt</a>
+    <a href="#">Quests</a>
+    <a href="#">Achievements</a>
+    <a href="#">Shop</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
   </div>
 </div>
 
@@ -87,22 +89,26 @@ body {
     <span style="color:greenyellow">
         <i class="fas fa-question"></i>
     </span>
-    <i>Quest here</i>
-    </br>
-    <i>Worth 50 NP</i>
+    <i class="header2">Daily quest:</i>
+    <br>
+    <i>50NP: Use 5% green energy</i>
     <i></i>
 </div>
 <div class="container-item item-2">
         <span style="color:gold">
                 <i class="fas fa-trophy"></i>
             </span>
-            <i>Achievement here</i>
+            <i class="header2">You are close to unlocking:</i>
+            <br>
+            <i>500NP: Have 50% of your consumption come from green energy in a whole week</i>
 </div>
 <div class="container-item item-3">
         <span style="color:gold">
                 <i class="fas fa-trophy"></i>
             </span>
-            <i>Achievement here</i>
+            <i class="header2">Recently unlocked achievement:</i>
+            <br>
+            <i>1000NP: Found the GOLD MINE</i>
 </div>
 </div>
   <div class="footer">
