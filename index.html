@@ -1,117 +1,142 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<style>
-body {
-    font-family: 'Lato', sans-serif;
-}
+	<head>
+		<title>Astral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    background-color: rgb(212, 221, 224);
-    background-color: rgba(212, 221, 224 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-.overlay-content {
-    position: relative;
-    padding-left: 5%;
-    top: 15%;
-    width: 100%;
-    text-align: left;
-    margin-top: 10px;
-}
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon fa-home"><span>Home</span></a>
+						<a href="#work" class="icon fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+						<a href="https://twitter.com/ajlkn" class="icon fa-twitter"><span>Twitter</span></a>
+					</nav>
 
-.overlay a {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 12vw;
-    line-height: 12vw;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+				<!-- Main -->
+					<div id="main">
 
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Jane Doe</h1>
+									<p>Senior Astral Projectionist</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
 
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Work</h2>
+								</header>
+								<p>
+									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
+									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+									luctus elit eget interdum.
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										</div>
+									</div>
+								</section>
+							</article>
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-</style>
-</head>
-<body>
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">Consumption</a>
-    <a href="#">Comparrisons</a>
-    <a href="#">Settings</a>
-    <a href="#">Contact</a>
-    <a href="#">Bills</a>
-  </div>
-</div>
-&#9776;
-<div class="container">
-    <div class="header" style="padding-top: 5vw;">
-      <span style="font-size: 10vw;height: 100%;width: 100%;line-height: 100%;height: 16vw;vertical-align: super;padding-left: 5vw;">
-    <i class="fas fa-bars" class="nav" onclick="openNav()"></i>
-  </span>
-    <span ><img src="https://nef.dk/media/1014/nef_fonden_rgb.png" style="width:12vw;height:12vw;line-height: 9vw;padding-left: 28vw;overflow:visible;vertical-align: text-bottom;"></span>
-  </div>
-  <div style="padding:6vw;"></div>
-  <div class="container-item item-1">
-    <span><img src="consumptioncurve.jpg" style="width:100%;height:100%;"></span>
-  </div>
-  <div class="container-item item-2">
-      <span><img src="curve2.jpg" style="width:100%;height:100%;"></span>
-  </div>
-  <div class="container-item item-3">
-      <span><img src="consumptioncurve.jpg" style="width:100%;height:100%;"></span>
-  </div>
-</div>
-  <div class="footer">
-        <a href="index.html">
-        <div class="mainPage"><img src="https://nef.dk/media/1014/nef_fonden_rgb.png" style="width:48px;height:48px;"></div>
-      </a>
-      <a href="klimakampen.html">
-        <div href="klimakampen.html" class="klimakampen">KLIMAKAMPEN</div>
-      </a>
-      </div>
-</div>
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+					</div>
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-     
-</body>
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
